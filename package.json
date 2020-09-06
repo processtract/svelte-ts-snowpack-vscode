@@ -10,7 +10,7 @@
     "dist/css/components.css"
   ],
   "scripts": {
-    "start": "snowpack dev",
+    "dev": "snowpack dev",
     "test": "jest",
     "build": "rollup -c"
   },
