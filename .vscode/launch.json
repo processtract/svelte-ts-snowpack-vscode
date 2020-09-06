@@ -1,0 +1,72 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Application",
+      "type": "chrome",
+      "preLaunchTask": "Start Dev",
+      "postDebugTask": "Terminate All Tasks",
+      "request": "launch", 
+      "url": "http://localhost:8081",
+      "sourceMapPathOverrides":{
+        "sources://src/*": "${workspaceFolder}/src/*"
+      },
+    },
+    {
+      "name": "Debug Dev Build Process",
+      "type": "node",
+      "request": "launch",      
+      "runtimeExecutable": "npm",
+      "sourceMaps": true,
+      "console": "integratedTerminal",
+      "trace": "all",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "port": 5858,
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "pattern": "http:\/\/localhost:([0-9]+).*",
+        "uriFormat": "http://localhost:%s"
+      }
+    },
+    {
+      "name": "Debug Tests",
+      "type": "node",
+      "request": "launch",      
+      "runtimeExecutable": "npm",
+      "sourceMaps": true,
+      "console": "integratedTerminal",
+      "trace": "all",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "test"
+      ],
+      "port": 5859
+    },
+    {
+      "name": "Debug Build Process",
+      "type": "node",
+      "request": "launch",      
+      "runtimeExecutable": "npm",
+      "sourceMaps": true,
+      "console": "integratedTerminal",
+      "trace": "all",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "build"
+      ],
+      "port": 5859
+    }
+  ]
+}

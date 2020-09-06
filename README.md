@@ -1,1 +1,1 @@
-# svelte-ts-snowpack-vscode
+# svelte-ts-snowpack-vscode-2
