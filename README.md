@@ -17,7 +17,6 @@ The goal with this template was to get the fullest, quickest, and most integrate
 
 ```
 npx degit processtract/svelte-ts-snowpack-vscode
-cd svelte-ts-snowpack-vscode
 npm install
 npm run dev (or select the 'Debug Application' configuration in VSCode and hit F5)
 ```
