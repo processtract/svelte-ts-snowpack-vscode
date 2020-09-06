@@ -2,7 +2,7 @@
 
 The goal with this template was to get the fullest, quickest, and most integrated development and debugging experience we could. We went with Snowpack because of the speed of the dev->save->recompile->reload loop. With unbundled development the browser updates are near instant. Read more about Snowpack [here](https://www.snowpack.dev/).
 
-##What do you get with this template
+## What do you get with this template
 
 - :heavy_check_mark: Chrome Debugging in VSCode: set a breakpoint, hit F5, your application is started and the breakpoint is hit.
 - :heavy_check_mark: Snowpack V2 for development
@@ -13,7 +13,7 @@ The goal with this template was to get the fullest, quickest, and most integrate
 - :heavy_check_mark: Production bundling with Rollup
 - :heavy_check_mark: (Nearly) Full debugging experience for the app itself, build, and test execution.
 
-##Get Started
+## Get Started
 
 ```
 npx degit processtract/svelte-ts-snowpack-vscode
